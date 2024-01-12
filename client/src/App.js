@@ -35,7 +35,11 @@ function App() {
       <br></br>
       <h2>Login</h2>
       <button onClick={googleLogin}>Login with Google</button>
+      <br></br>
+      <button><a href="https://accounts.google.com/o/oauth2/v2/auth?scope=openid&include_granted_scopes=true&response_type=token&state=state_parameter_passthrough_value&redirect_uri=http://localhost:3000&client_id=524319842420-0kk4ugtrf9mb5rs16mvs97guldts9iqo.apps.googleusercontent.com">Login with Google</a></button>
+      <br></br>
       <button><a href="https://github.com/login/oauth/authorize?client_id=82ce62f2270870430002&scope=user">Login with Github</a></button>
+      <br></br>
       <button><a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77q1fie0bhqbmk&redirect_uri=http://localhost:3000&scope=profile">Login with LinkedIn</a></button>
     </>
   );
