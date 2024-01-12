@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from 'react';
 import { useGoogleLogin, googleLogout } from '@react-oauth/google';
 
@@ -30,9 +31,12 @@ function App() {
   );
   return (
     <>
-      <h1>TESTING</h1>
+      <h1>TESTING - Homepage</h1>
+      <br></br>
+      <h2>Login</h2>
       <button onClick={googleLogin}>Login with Google</button>
       <button><a href="https://github.com/login/oauth/authorize?client_id=82ce62f2270870430002&scope=user">Login with Github</a></button>
+      <button><a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77q1fie0bhqbmk&redirect_uri=http://localhost:3000&scope=profile">Login with LinkedIn</a></button>
     </>
   );
 }
