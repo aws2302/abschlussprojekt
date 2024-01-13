@@ -1,0 +1,44 @@
+{
+  version: '2.0',
+  routeKey: 'POST /login/google',
+  rawPath: '/login/google',
+  rawQueryString: 'provider=google&token=ya29.a0AfB_byCHjjNwHg95WcIyCG6IcN6DAXjQnIux1eEQMFFb6OXhQgV7qPQMzRtJMiodba2aEb1cMo-Z2rzNkVl9JvlXtdwtIxjEodDiemRFrgWaCNHagq8x1vYJzfBxx_0JKWNQcPTr0bALoMc2GjGjcs7umcgaCgYKAe8SARASFQHGX2MiwRYyHg2HEHB3X52mgVILBw0169',
+  headers: {
+    accept: '*/*',
+    'accept-encoding': 'gzip, deflate, br',
+    'cache-control': 'no-cache',
+    'content-length': '489',
+    'content-type': 'multipart/form-data; boundary=--------------------------543826660053868527961887',
+    host: 'nn2hvywc12.execute-api.eu-central-1.amazonaws.com',
+    'postman-token': 'ab4d7df4-e36f-4811-975e-23608a22092a',
+    'user-agent': 'PostmanRuntime/7.36.1',
+    'x-amzn-trace-id': 'Root=1-65a2a50e-44c7ee0504dda7b8525594d5',
+    'x-forwarded-for': '78.54.56.58',
+    'x-forwarded-port': '443',
+    'x-forwarded-proto': 'https'
+  },
+  queryStringParameters: {
+    provider: 'google',
+    token: 'ya29.a0AfB_byCHjjNwHg95WcIyCG6InIux1eEQMFFb6OXhQgV7qPQMzRtJMiodba2aEb1cMo-Z2rzNkVl9JvlXtdwtIxjEodDiemRFrgWaCNMRnd1w7Hagq8x1vYJzfBxx_0JKWNQcPTr0bALoMc2GjGjcs7umcgaCgYKAe8SARASFQHGX2MiwRYyHg2HEHB3X52mgVILBw0169'
+  },
+  requestContext: {
+    accountId: '475032304489',
+    apiId: 'nn2hvywc12',
+    domainName: 'nn2hvywc12.execute-api.eu-central-1.amazonaws.com',
+    domainPrefix: 'nn2hvywc12',
+    http: {
+      method: 'POST',
+      path: '/login/google',
+      protocol: 'HTTP/1.1',
+      sourceIp: '78.54.56.58',
+      userAgent: 'PostmanRuntime/7.36.1'
+    },
+    requestId: 'Re66Vg70FiAEJTQ=',
+    routeKey: 'POST /login/google',
+    stage: '$default',
+    time: '13/Jan/2024:14:58:22 +0000',
+    timeEpoch: 1705157902617
+  },
+  body: 'LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLTU0MzgyNjY2MDA1Mzg2ODUyNzk2MTg4Nw0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJwcm92aWRlciINCg0KZ29vZ2xlDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tNTQzODI2NjYwMDUzODY4NTI3OTYxODg3DQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InRva2VuIg0KDQp5YTI5LmEwQWZCX2J5REZEcmJpZ3psdnNDTWJnU1ZNRWQwSVBrWmdoUk5JOENsdGN0ZDhsOUh6WnFXZWowTEJUWE5RbnQ1LUd1VmNibXh1Wnd2eEw2WGdOMUN6dlQ2SFp3bXN2RHl6b3NfNFV5UE5QdGtZbVV5WlFsWElzb0VNVW1lU3RVejZoZlN1RzdyN2t2MGljdEI0aDdOaEM2TzNYdnFRYUNnWUtBZVVTQVJBU0ZRSEdYMk1pUEJLSWdfdFFIanlWWVQ5VjNGZFByQTAxNjkNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS01NDM4MjY2NjAwNTM4Njg1Mjc5NjE4ODctLQ0K',
+  isBase64Encoded: true
+}
