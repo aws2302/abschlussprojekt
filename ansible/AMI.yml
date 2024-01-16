@@ -1,3 +1,4 @@
+---
 - name: Golden AMI
   hosts: all
   become: yes
