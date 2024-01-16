@@ -1,0 +1,10 @@
+{
+    "function_name": "xxx",
+    "http_method": "POST",
+    "api-endpoint": "/login/google",
+    "policies": {
+        "s3": "read",
+        "dynamodb": "write",
+        "ecr": "sudo"
+    }
+}
