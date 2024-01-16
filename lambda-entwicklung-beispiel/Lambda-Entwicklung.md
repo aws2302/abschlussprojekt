@@ -3,6 +3,7 @@
 1. Eine NodeJS-App wird lokal & mit allen gewollten npm-packages entwickelt und getestet.
 2. Die App wird in einen [Lambda-Handler](#umwandeln-der-node-app-in-eine-lambda-funktion) verpackt und die Variablen an das Event angepasst.
 3. VOR dem push/pull-request wird für die CI/CD die [lambda_def.json](#ausfüllen-der-lambda_defjson) ausgefüllt.
+4. Der Code wird auf den dev-Branch gepusht und automatisiert über AWS-Lambda und API-GW bereit gestellt.
 
 ------
 ## Ablauf
@@ -106,6 +107,24 @@ exports.handler = async (event) => {
         "s3": "read",
         "dynamodb": "write",
         "ecr": "sudo"
-    }
+    },
+    "pipeline": {
+        "trigger": "xxx",
+        "date": "xxx",
+        "meta": "xxx"
+        },
+    "meta": { 
+        "foo": "bar",
+        "tags": {
+            "environment": "dev",
+            "deploy": "terraform"
+            } 
+        }
 }
 ```
+
+------
+#### Push/Pull to CI/CD
+![CI/CD Workflow](./abschlussprojekt_backend_deploy.png)
+- [https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows](caching deps)
+- [https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts](storing artifacts)
