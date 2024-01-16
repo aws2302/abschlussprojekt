@@ -3,6 +3,7 @@ Moin Leutz!
 
 ## Inhalt
 - [Git Organisation](./git_strategie.md) - wie man sich auf Git organisieren könnte und Tipps
+- [Lambda](./lambda-entwicklung-beispiel/Lambda-Entwicklung.md)-Entwicklung Beispiel
 - [Social Login](./login) - Informationen zu den Social-Login-Abläufen
     - [Überblick APIs (ohne Google)](./login/login_apis.md)
     - [google - React](./login/google_auth.md)

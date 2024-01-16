@@ -5,9 +5,10 @@
 - Lambda Funktion erhält Google Token als Query-Parameter.
 - Token wird bei Google-API gegen User-Informationen eingelöst.
 - Lambda sendet User-Informationen als JSON zurück.
+### [RDS-MySQL-DB Anschluss](./local_dev/local-rds-mysql/index.js)
+- Lambda Funktion mit Anschluss an RDS-MySQL-DB.
 
 ## In Arbeit:
-### [Lambda-Workflow](./local_dev/local-lambda/README.md)
 
 ## Interessant:
-#### [Lambda-API-GW-POST-Event mit QueryParams und FormData in Body](./events/apigw-FormData-QueryParams.object)
+#### [Lambda-API-GW-POST-Event mit QueryParams und FormData in Body](./events/dev.json)
