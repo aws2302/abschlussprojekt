@@ -1,0 +1,9 @@
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:ChriZZ2406/Abschlussprojekt-Front-Backend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/BastiWho/Abschlussprojekt_Backend.git
+[submodule "infrastructure"]
+	path = infrastructure
+	url = git@github.com:ramziatrous/Abschlussprojekt-Terraform-AWS.git
