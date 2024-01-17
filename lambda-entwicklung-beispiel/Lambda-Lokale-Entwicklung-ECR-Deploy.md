@@ -1,6 +1,10 @@
 # Lambda Workflow
 #### Konzept
-Man entwickelt lokal mit allen gewollten npm-packages die Lambda-Funktion, pusht dann das Image in die ECR und stellt dann die Lambda-Funktion mit dem Image aus der ECR bereit. Abschließend verbindet man die Lambda-Funktion mit dem API-Gateway.
+1. Eine NodeJS-App wird lokal & mit allen gewollten npm-packages entwickelt und getestet.
+2. Die App wird in einen Lambda-Handler verpackt und die Variablen an das Event angepasst.
+3. Der Code wird auf den dev-Branch gepusht und automatisiert über AWS-Lambda und ggf API-GW bereit gestellt.
+
+pusht dann das Image in die ECR und stellt dann die Lambda-Funktion mit dem Image aus der ECR bereit. Abschließend verbindet man die Lambda-Funktion mit dem API-Gateway.
 
 #### Inhalt
 1. [Lokale Entwicklung](#1-lokale-entwicklung)
@@ -29,11 +33,11 @@ Man entwickelt lokal mit allen gewollten npm-packages die Lambda-Funktion, pusht
     2.1 AWS login 
     - `aws sso login --profile techstarter`
 
-    2.2 Docker bei aws anmelden 
-    - `aws ecr get-login-password --profile techstarter | docker login --username AWS --password-stdin !!!ECR-URI!!!`
-
-    2.3 (beim 1. Mal) ECR repository erstellen 
+    2.2 (beim 1. Mal) ECR repository erstellen 
     - `aws ecr create-repository --profile techstarter --repository-name abschlussprojekt --image-scanning-configuration scanOnPush=true --image-tag-mutability MUTABLE`
+
+    2.3 Docker bei aws anmelden 
+    - `aws ecr get-login-password --profile techstarter | docker login --username AWS --password-stdin !!!ECR-URI!!!`
 
     2.4 Image zu ECR umtaggen 
     - `dd tag docker-image:test !!!.dkr.ecr.eu-central-1.amazonaws.com/abschlussprojekt:latest`

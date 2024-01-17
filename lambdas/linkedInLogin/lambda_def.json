@@ -1,0 +1,22 @@
+{
+    "function_name": "xxx",
+    "http_method": "POST",
+    "api-endpoint": "/login/google",
+    "policies": {
+        "s3": "read",
+        "dynamodb": "write",
+        "ecr": "sudo"
+    },
+    "pipeline": {
+        "trigger": "xxx",
+        "date": "xxx",
+        "meta": "xxx"
+        },
+    "meta": { 
+        "foo": "bar",
+        "tags": {
+            "environment": "dev",
+            "deploy": "terraform"
+            } 
+        }
+}

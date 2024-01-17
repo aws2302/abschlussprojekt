@@ -1,24 +1,33 @@
-// ####### Am Ende das Programm in den handler einbinden und variable aus dem event übertragen ######
-// exports.handler = async (event) => {
-//     response = {
-//         statusCode: 200,
-//         body: JSON.stringify({
-//             email: res.email,
-//         })
-//     };
-//     return response;
-// };
+exports.handler = async (event) => {
+    console.log(JSON.stringify(event));
+    const token = event.queryStringParameters.token;
+    
+    //* UserInfos von Google abholen
+    const urlGoogleApi = `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${token}`;
+    let res = await fetch(urlGoogleApi);
+    res = await res.json();
 
-// ######## Lambda-Event wie es vom API-Gateway kommt ######## 
-// komplettes Event zu finden https://github.com/aws2302/abschlussprojekt/blob/dev-karim/aws/events/dev.json
-const apiEvent = {
-    "version": "2.0",
-    "routeKey": "POST /example/path",
-    "rawQueryString": "provider=google&token=xxx",
-    "queryStringParameters": {
-        "provider": "google",
-        "token": ""
-    },
-    "body": "CONTENT",
-    "isBase64Encoded": true
+    let response;
+    if (res.email) {
+        // ALLES SUPER, wir haben die Infos nach Schema
+        console.log("GOOGLE-SUCCESS: " + JSON.stringify(res));
+        response = {
+            statusCode: 200,
+            body: JSON.stringify({
+                email: res.email,
+            })
+        };
+    }
+    else {
+        // FAIL, Auth-Prozess gescheitert
+        console.log("GOOGLE-ERROR: " + JSON.stringify(res));
+        response = {
+            statusCode: 401,
+            body: JSON.stringify({
+                message: "Error while Authenticating. Please retry.",
+            })
+        };
+    }
+
+    return response;
 };
