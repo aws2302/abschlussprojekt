@@ -2,7 +2,7 @@
 
 - [x] Ein Playbook für eine Custom AMI
 - [x] AMI erstellen (AMI-ID: ami-0d191274f098564a6), (AMI-Name: aws-2023-ap-ami) (Update & upgrade) & Docker installieren -> Team Terraform 
-- [ ] Datenbank Bash Script schreiben
+- [x] Datenbank Bash Script schreiben
 
 # Commands für AMI Playbook
 
