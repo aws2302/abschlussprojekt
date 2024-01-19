@@ -10,5 +10,6 @@ Dockerfile(s)/Playbook(s), um das Frontend in Container durch das *CI/CD-Team* z
 - [IaC](https://github.com/ramziatrous/Abschlussprojekt-Terraform-AWS)
 
 ### Informationen für Entwickler
+![Git Workflow](./images/git-workflow-bedingungen.png)
 - [Git](./git.md) - Struktur & Workflow für das Projekt
 - [Git Submodule](./git-submodule.md) - Workflow
