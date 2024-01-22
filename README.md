@@ -5,7 +5,7 @@ Dockerfile(s)/Playbook(s), um das Frontend in Container durch das *CI/CD-Team* z
 
 ## Weitere Teile des Projekts
 *als Submodule eingebunden:*
-- [Frontend/DB](https://github.com/ChriZZ2406/Abschlussprojekt-Front-Backend)
+- [Frontend/DB](https://github.com/Abschlussprojekt2302/TS-Alumni)
 - [Backend](https://github.com/BastiWho/Abschlussprojekt_Backend)
 - [IaC](https://github.com/ramziatrous/Abschlussprojekt-Terraform-AWS)
 
