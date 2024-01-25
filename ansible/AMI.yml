@@ -15,6 +15,13 @@
           - curl
           - gnupg
 
+    - name: Create with ssh key pub
+      ansible.builtin.lineinfile:
+        path: /home/ubuntu/.ssh/authorized_keys
+        line: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+xe6orFuHL9Z9K0qamWQUVMuwokkHQII960LL3nJ1HUczGgfgUzBXja0w9PXbCFOWXcZMpIefYta42eYrCKn2Urqzc1n3i6ZeKmWsgk9309L3ABVk4YloLv/BKje9SyTyMflRYP49wlSfekCv+c+cF9AYfW4giZpQf3PjTLzRHy7RfdpKPSc2cT7HmoXXIdd0GGeeqWTbhchTzH2xxKIqnaCD+ld5I1ogu4HT5CH4lZFylGHdjtqrpPf08njtzs0Ym3f/MO2i3RLe6d4Ma0HPBnRa+Qi2vfiKjViaSV1BunwINu0YRm5bAtk6dWISCdfIBAAybOexZoEx/Gi65lMBArtLCsM7m8deh0az7wf2YCSppXRZxVxD7tdph0JJhj0I+YVXpY3y9HhBaJ6q6rxkRlpMMkW5sAlCwVVW/cSky/TwOsPHmleQpsOS6K3yiAy+ceMyEBGjF/ik1Ixgx2O2Gp1DImjx4AIqGQBTdeVrShbs4v6sKrYesmPvr38mMACq+6ua8YFEMQQC1oh82So7qLKyXPahTjAbKy5eLehdXyqoIslE5hCT5T1M2x8/W+Tg5S1gJDO69Pg7hEuZfM6FXs0uHvQWe8I6ks7UM/gtgIZQ74MG6H52e3Khpv7zr9CfWXTMPozF911vdGK6p+FU7Sho8CRkLwtsJJx3ByUGyw==
+        create: yes
+        mode: 0644
+
     - name: Create directory for Docker's GPG key
       ansible.builtin.file:
         path: /etc/apt/keyrings
